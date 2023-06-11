@@ -11,7 +11,7 @@ class CategoryCard extends StatelessWidget {
       decoration: BoxDecoration(boxShadow: [
         BoxShadow(color: Colors.grey, blurRadius: 2, spreadRadius: 1)
       ], color: Colors.white54, borderRadius: BorderRadius.circular(15)),
-      child: const Column(
+      child:  Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           CircleAvatar(

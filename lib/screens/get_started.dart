@@ -200,7 +200,7 @@ class _GetStartedState extends State<GetStarted> {
                                   elevation: 2,
                                   onPressed: () {},
                                   color: Colors.white,
-                                  child: const Row(
+                                  child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceAround,
                                     children: [
@@ -220,7 +220,7 @@ class _GetStartedState extends State<GetStarted> {
                                   elevation: 2,
                                   onPressed: () {},
                                   color: Colors.white,
-                                  child: const Row(
+                                  child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceAround,
                                     children: [
