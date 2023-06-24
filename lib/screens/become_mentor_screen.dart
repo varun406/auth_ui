@@ -22,13 +22,13 @@ class BecomeMentor extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(children: [
-              Text(
+              const Text(
                 "Make a difference on a global scale by",
                 style: TextStyle(fontSize: 14),
               ),
-              Text(
+              const Text(
                 "Becoming a Mentor",
                 style: TextStyle(fontSize: 21, fontWeight: FontWeight.w600),
               ),
@@ -38,7 +38,7 @@ class BecomeMentor extends StatelessWidget {
                     Container(
                       width: 250,
                       height: 350,
-                      padding: EdgeInsets.only(bottom: 7),
+                      padding: const EdgeInsets.only(bottom: 7),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           border: Border.all(width: 3, color: Colors.white),
@@ -49,7 +49,7 @@ class BecomeMentor extends StatelessWidget {
                           )),
                     ),
                     ElevatedButton(
-                        onPressed: () {}, child: Text("Apply As Mentor"))
+                        onPressed: () {}, child: const Text("Apply As Mentor"))
                   ],
                 ),
               )

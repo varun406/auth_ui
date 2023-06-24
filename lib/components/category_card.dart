@@ -8,10 +8,10 @@ class CategoryCard extends StatelessWidget {
     return Container(
       height: 100,
       padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
-      decoration: BoxDecoration(boxShadow: [
+      decoration: BoxDecoration(boxShadow: const [
         BoxShadow(color: Colors.grey, blurRadius: 2, spreadRadius: 1)
       ], color: Colors.white54, borderRadius: BorderRadius.circular(15)),
-      child:  Column(
+      child:  const Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           CircleAvatar(

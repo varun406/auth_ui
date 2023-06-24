@@ -23,12 +23,12 @@ class _LayoutScreenState extends State<LayoutScreen> {
   }
 
   final List<Widget> _list = <Widget>[
-    HomeScreen(),
-    MyCourses(),
-    LiveClasses(),
-    Bookmark(),
-    MyProfile(),
-    AboutUs()
+    const HomeScreen(),
+    const MyCourses(),
+    const LiveClasses(),
+    const Bookmark(),
+    const MyProfile(),
+    const AboutUs()
   ];
 
   @override
@@ -54,8 +54,8 @@ class _LayoutScreenState extends State<LayoutScreen> {
         selectedItemColor: Colors.green[500],
         unselectedItemColor: Colors.green[300],
         selectedLabelStyle:
-            TextStyle(fontSize: 10, fontWeight: FontWeight.w500),
-        unselectedLabelStyle: TextStyle(fontSize: 10),
+            const TextStyle(fontSize: 10, fontWeight: FontWeight.w500),
+        unselectedLabelStyle: const TextStyle(fontSize: 10),
         showUnselectedLabels: true,
         onTap: _onItemTapped,
       ),

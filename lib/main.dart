@@ -1,6 +1,10 @@
+import 'package:auth_ui/screens/welcome.dart';
 import 'package:auth_ui/screens/auth_screen.dart';
-import 'package:auth_ui/screens/become_mentor_screen.dart';
+import 'package:auth_ui/screens/home_screen.dart';
+import 'package:auth_ui/screens/welcome_mentor.dart';
 import 'package:flutter/material.dart';
+
+import 'screens/become_mentor_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
-      home: BecomeMentor(),
+      home: const Welcome(),
     );
   }
 }

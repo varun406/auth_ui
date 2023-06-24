@@ -5,6 +5,6 @@ class LiveClasses extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text("LiveClasses"));
+    return const Center(child: Text("LiveClasses"));
   }
 }

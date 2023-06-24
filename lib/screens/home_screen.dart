@@ -9,48 +9,50 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        children: [
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15, vertical: 25),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(
-                  children: [
-                    Text(
-                      "Good Morning",
-                      style: TextStyle(color: Colors.green[500]),
-                    ),
-                    Text(
-                      "Hi User",
-                      style: TextStyle(fontSize: 18),
-                    ),
-                  ],
-                ),
-                IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.notifications, color: Colors.green[500]))
-              ],
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 25),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    children: [
+                      Text(
+                        "Good Morning",
+                        style: TextStyle(color: Colors.green[500]),
+                      ),
+                      const Text(
+                        "Hi User",
+                        style: TextStyle(fontSize: 18),
+                      ),
+                    ],
+                  ),
+                  IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.notifications, color: Colors.green[500]))
+                ],
+              ),
             ),
-          ),
-          CardSection(
-            card: CategoryCard(),
-            sectionTitle: "Categories",
-          ),
-          const SizedBox(
-            height: 15,
-          ),
-          CardSection(
-            card: ExpertsCard(),
-            sectionTitle: "Learn from Top 1% Industry Experts",
-          ),
-          CardSection(
-            card: CourseCard(),
-            sectionTitle: "Popular Course",
-          )
-        ],
+            CardSection(
+              card: const CategoryCard(),
+              sectionTitle: "Categories",
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            CardSection(
+              card: const ExpertsCard(),
+              sectionTitle: "Learn from Top 1% Industry Experts",
+            ),
+            CardSection(
+              card: const CourseCard(),
+              sectionTitle: "Popular Course",
+            )
+          ],
+        ),
       ),
     );
   }
