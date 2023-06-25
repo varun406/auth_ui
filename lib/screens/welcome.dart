@@ -17,109 +17,112 @@ class Welcome extends StatelessWidget {
       home: Scaffold(
         appBar: const ParabolicWaveAppBar(), // Use the custom CurvedAppBar
         body: Center(
-          child: Column(
-            children: [
-              const SizedBox(height: 113.5),
-              const Image(
-                image: AssetImage(
-                  "assets/images/logo_black.png",
+          child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Column(
+              children: [
+                const SizedBox(height: 113.5),
+                const Image(
+                  image: AssetImage(
+                    "assets/images/logo_black.png",
+                  ),
+                  width: 228,
                 ),
-                width: 228,
-              ),
-              const SizedBox(height: 50),
-              Container(
-                width: 338,
-                height: 56,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(28),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withOpacity(0.3),
-                      offset: const Offset(0, 3),
-                      blurRadius: 8.5,
-                    ),
-                  ],
-                ),
-                child: MaterialButton(
-                  onPressed: () {
-                    // Handle button tap
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const AuthScreen(),
-                      ),
-                    );
-                  },
-                  elevation: 0,
-                  shape: RoundedRectangleBorder(
+                const SizedBox(height: 50),
+                Container(
+                  width: 338,
+                  height: 56,
+                  decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(28),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.3),
+                        offset: const Offset(0, 3),
+                        blurRadius: 8.5,
+                      ),
+                    ],
                   ),
-                  color: const Color(0xFF056A67),
-                  child: const Text(
-                    'Get Started',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 17,
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 34),
-              Container(
-                width: 338,
-                height: 56,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(28),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withOpacity(0.3),
-                      offset: const Offset(0, 3),
-                      blurRadius: 8.5,
-                    ),
-                  ],
-                ),
-                child: MaterialButton(
-                  onPressed: () {
-                    // Handle button tap
-                    Navigator.push(
+                  child: MaterialButton(
+                    onPressed: () {
+                      // Handle button tap
+                      Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => WelcomeMentor()));
-                  },
-                  elevation: 0,
-                  shape: RoundedRectangleBorder(
+                          builder: (context) => const AuthScreen(),
+                        ),
+                      );
+                    },
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(28),
-                      side: const BorderSide(
-                          color: Color.fromRGBO(55, 237, 129, 1))),
-                  color: const Color(0xFFFFFFFF),
-                  child: const Text(
-                    'Apply As Mentor',
-                    style: TextStyle(
-                      color: Color(0xFF056A67),
-                      fontSize: 17,
+                    ),
+                    color: const Color(0xFF056A67),
+                    child: const Text(
+                      'Get Started',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 17,
+                      ),
                     ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 143),
-              RichText(
-                  textAlign: TextAlign.center,
-                  text: const TextSpan(
+                const SizedBox(height: 34),
+                Container(
+                  width: 338,
+                  height: 56,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(28),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.3),
+                        offset: const Offset(0, 3),
+                        blurRadius: 8.5,
+                      ),
+                    ],
+                  ),
+                  child: MaterialButton(
+                    onPressed: () {
+                      // Handle button tap
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => WelcomeMentor()));
+                    },
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(28),
+                        side: const BorderSide(
+                            color: Color.fromRGBO(55, 237, 129, 1))),
+                    color: const Color(0xFFFFFFFF),
+                    child: const Text(
+                      'Apply As Mentor',
                       style: TextStyle(
-                          color: Color.fromRGBO(41, 41, 41, 1), fontSize: 13),
-                      children: [
-                        TextSpan(
-                          text: "A product of\n",
-                        ),
-                        TextSpan(
-                          style: TextStyle(
-                            color: Color.fromRGBO(5, 106, 103, 1),
-                            fontWeight: FontWeight.bold,
+                        color: Color(0xFF056A67),
+                        fontSize: 17,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 143),
+                RichText(
+                    textAlign: TextAlign.center,
+                    text: const TextSpan(
+                        style: TextStyle(
+                            color: Color.fromRGBO(41, 41, 41, 1), fontSize: 13),
+                        children: [
+                          TextSpan(
+                            text: "A product of\n",
                           ),
-                          text: "Gigfolioo Technologies Private Limited",
-                        ),
-                      ])),
-            ],
+                          TextSpan(
+                            style: TextStyle(
+                              color: Color.fromRGBO(5, 106, 103, 1),
+                              fontWeight: FontWeight.bold,
+                            ),
+                            text: "Gigfolioo Technologies Private Limited",
+                          ),
+                        ])),
+              ],
+            ),
           ),
         ),
       ),

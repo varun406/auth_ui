@@ -1,5 +1,6 @@
 import 'package:auth_ui/screens/about_us_screen.dart';
 import 'package:auth_ui/screens/bookmark_screen.dart';
+import 'package:auth_ui/screens/course_enroll_screen.dart';
 import 'package:auth_ui/screens/home_screen.dart';
 import 'package:auth_ui/screens/live_classes_screen.dart';
 import 'package:auth_ui/screens/my_profile_screen.dart';
@@ -25,7 +26,7 @@ class _LayoutScreenState extends State<LayoutScreen> {
   final List<Widget> _list = <Widget>[
     const HomeScreen(),
     const MyCourses(),
-    const LiveClasses(),
+    const CourseEnrollScreen(),
     const Bookmark(),
     const MyProfile(),
     const AboutUs()
